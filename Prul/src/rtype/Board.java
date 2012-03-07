@@ -1,19 +1,10 @@
 package rtype;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Image;
-
-import java.awt.Toolkit;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
-
 import java.awt.event.ActionListener;
 import java.util.Random;
-
-import javax.swing.ImageIcon;
-import javax.swing.JPanel;
-import javax.swing.Timer;
 
 public class Board extends JPanel implements ActionListener {
 
@@ -38,7 +29,7 @@ public class Board extends JPanel implements ActionListener {
         setDoubleBuffered(true);
 
         x = y = 10;
-        timer = new Timer(25, this);
+        timer = new Timer(50, this);
         timer.start();
     }
 
